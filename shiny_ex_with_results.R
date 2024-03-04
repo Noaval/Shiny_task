@@ -7,7 +7,7 @@ library(readxl)
 library(tidyr)
 
 ##importing data
-data <- readxl::read_xlsx("C:/Users/97252/Desktop/תואר שני/מיומנויות במדעי הנתונים/shiny/shiny reactives/file_a3664f94-0441-4e67-bc94-d4ada374a1db.xlsx", 
+data <- readxl::read_xlsx("C:/Users/97252/Documents/GitHub/shiny_task/Shiny_task/file_a3664f94-0441-4e67-bc94-d4ada374a1db.xlsx", 
                           range = "A19:I39") |> 
   rename(Year = 1) |> 
   mutate(across(.fns = as.numeric)) |> 
